@@ -58,11 +58,6 @@ include("usuario.class.php");
 $datos = obtenerPublicaciones();
 
 
-//Gestion de Likes
-if (isset($_GET['like'])) {
-    $publicacion->megusta($publicacion->getLike());
-}
-
 //Llenado de los datos de las publicaciones
 if (isset($_POST['publicar'])) {
     $titulo = $_POST['title'];
@@ -96,7 +91,7 @@ if (isset($_POST['publicar'])) {
     }
 
 
-    $datos[] = $publicacion = new publicacion($codigoPublicacion, $titulo, $texto, $multimedia, $dataHora, 0, $codigoUsuario);
+    $datos[] = $publicacion = new publicacion($codigoPublicacion, $titulo, $texto, $multimedia, $dataHora,$codigoUsuario);
 }
 escribirPublicaciones($datos);
 
