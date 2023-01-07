@@ -37,6 +37,7 @@ if(isset($_POST['add'])){
     if (empty($_POST['rol'])) {
       $errores[] = 'Añade rol';
     }
+    //hola
     print_r($errores);
   }
 }
