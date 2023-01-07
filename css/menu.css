@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#avatar{
+	
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+#avatar:hover{
+	background-color: rgba(255, 255, 255, 0.26);
+}
+
+#main-header {
+    background: rgb(254,87,87);
+	color: white;
+	height: 100px;
+}	
+	#main-header a {
+		color: white;
+	}
+
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+#logo-mid img {
+	margin-left:40%;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+
+#logo{
+	padding-top:10px;
+    height: 50px;
+    width: 200px;
+    
+}
+	
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 100px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+                transition-duration: 0.4s;
+			}
+			
+				nav ul li a:hover {
+					background:rgba(248, 144, 239, 0.384);
+				}

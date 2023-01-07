@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: rgb(24, 24, 24);
+  }
+
+ /* Estilo del menu */
+  
+  #avatar {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+  }
+  
+  #main-header {
+    background: rgba(231, 79, 79, 0.301);
+    color: rgb(255, 255, 255);
+    height: 100px;
+  }
+  #main-header a {
+    color: rgb(255, 255, 255);
+  }
+  
+  #logo-header {
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+  }
+  
+  nav {
+    float: right;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 100px;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+  }
+  
+  nav ul li a:hover {
+    background: rgba(248, 144, 239, 0.384);
+  }
+
+/* Estilo de peril.php */
+
+
+  .main{
+    padding: 20px;
+    margin: 20px;
+    border : 1px solid rgb(128, 128, 128);
+    border-radius: 20px;
+}
+.main fieldset{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main button{
+    margin-left: 10px;
+}
+#avatar{
+    width: 100px;
+    height: 100px;
+}
+#foto{
+    align-items: center;
+}
+.control-table{
+    margin: 20px;
+}
+
+.control-table table{
+    border-radius: 10px;
+}
+
+.control-table table,tr,td{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+/* Estilo de usuarios.php */
+
+.form-body{
+    background: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.form-body fieldset{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+}
+.form-body button{
+    margin-left: 10px;
+}
+.lista-users{
+    background: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.lista-users table{
+    border-radius: 10px;
+}
+.lista-users table,td,th{
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+/* Estilo del index */
+body{
+  padding: 0;
+  margin: 0;
+  background-image:url(/img/background.svg);
+  background-size: cover;
+}
+.main-body{
+  margin: 10px auto;
+  height: 100vh;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+
+}
+.publicacion{
+  margin: 10px;
+  padding: 5px;
+  width: 1000px;
+  height: auto;
+  border-radius: 10px;
+  background-color: rgb(116, 116, 116);
+}
+#imgavatar{
+  margin-left: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+#username{
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+#dataHora{
+  padding-right: 40px;
+  float: right;
+}
+
+.publicacion-head{
+  margin: 10px;
+  padding: 5px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: rgb(88, 88, 88);
+}
+
+.form-publicacion{
+  padding: 10px;
+  padding-top:20px ;
+  margin-top: 10px;
+  display: flex;;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: rgb(134, 126, 114);
+
+}
+
+.form-publicacion input,textarea{
+  border-radius: 10px;
+  padding: 10px;
+}
+.form-publicacion input{
+  width: 50%;
+}
+
+#file-input{
+  display: none;
+}
+.botones{
+  display: block;
+}
+#publicar{
+  float: right;
+  margin-right: 30px;
+  width:100px ;
+  height: 30px;
+  
+}
+#publicar{
+ justify-content: flex-end;
+}
+
+.fechahora{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: baseline;
+}
+.fechahora input{
+  width: 100px;
+  height: 5px;
+}

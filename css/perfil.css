@@ -1,0 +1,33 @@
+.main{
+    padding: 20px;
+    margin: 20px;
+    border : 1px solid gray;
+    border-radius: 20px;
+}
+.main fieldset{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main button{
+    margin-left: 10px;
+}
+#avatar{
+    width: 100px;
+    height: 100px;
+}
+#foto{
+    align-items: center;
+}
+.control-table{
+    margin: 20px;
+}
+
+.control-table table{
+    border-radius: 10px;
+}
+
+.control-table table,tr,td{
+    border: 1px solid gray;
+    padding: 10px;
+}
