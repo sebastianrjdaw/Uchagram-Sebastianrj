@@ -150,12 +150,6 @@ escribirPublicaciones($datos);
                     } ?></p>
                 <?php if (!empty($publicacion->getMultimedia()))
                     echo $publicacion->getMultimedia() ?>
-                <div class="likes">
-                    <?php echo $publicacion->getLike() ?>
-                    <a href="index.php?like=" <?php echo $cLike++; ?>>
-                        <img src="img/like.png" width="25" height="25" />
-                    </a>
-                </div>
             </div>
 
     <?php }

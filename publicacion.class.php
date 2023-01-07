@@ -6,7 +6,6 @@
    private $multimedia;
    private $dataPublicacion;
    private $codUsuario;
-	private $like;
 
    public function getCodigo() {
 	return $this->codigo;
@@ -70,23 +69,14 @@ public function setCodigo($codigo): self {
 		return $this;
 	}
 
-	public function getLike() {
-		return $this->like;
-	}
 	
 
-	public function setLike($like): self {
-		$this->like = $like;
-		return $this;
-	}
-
-   public function __construct( $codigo, $titulo ,$texto, $multimedia, $dataPublicacion,$like, $codUsuario){
+   public function __construct( $codigo, $titulo ,$texto, $multimedia, $dataPublicacion,$codUsuario){
       $this->codigo= $codigo;
 	  $this->titulo = $titulo;
       $this->texto = $texto;
       $this->multimedia = $multimedia;
       $this->dataPublicacion = $dataPublicacion;
-	  $this->like = $like;
       $this->codUsuario= $codUsuario;
    }
    
@@ -117,11 +107,6 @@ public function setCodigo($codigo): self {
 	}
 	return $nuevoTexto;
    }
-	public function megusta($likes)
-	{
-		$nlikes = $likes + 1;
-		return $nlikes;
-	}
  
 
 }

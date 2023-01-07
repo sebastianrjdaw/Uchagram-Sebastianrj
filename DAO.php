@@ -161,7 +161,7 @@ function obtenerPublicaciones()
     $arrayDatos = array();
     if ($fp = fopen($fichero, "r")) {
         while ($filaDatos = fgetcsv($fp, 0, ",")) {
-            $publicacion = new publicacion($filaDatos[0], $filaDatos[1], $filaDatos[2], $filaDatos[3], $filaDatos[4],$filaDatos[5],$filaDatos[6]);
+            $publicacion = new publicacion($filaDatos[0], $filaDatos[1], $filaDatos[2], $filaDatos[3], $filaDatos[4],$filaDatos[5]);
             $arrayDatos[] = $publicacion;
         }
     } else {
@@ -177,7 +177,7 @@ function escribirPublicaciones($arrayEscribir)
     $fichero = 'csv/publicaciones.csv';
     if ($fp = fopen($fichero, "w")) {
         foreach ($arrayEscribir as $publicacion) {
-            $filaDatos = [$publicacion->getCodigo(), $publicacion->getTitulo()  ,$publicacion->getTexto(), $publicacion->getMultimedia(), $publicacion->getDataPublicacion(),$publicacion->getLike(), $publicacion->getCodUsuario()];
+            $filaDatos = [$publicacion->getCodigo(), $publicacion->getTitulo()  ,$publicacion->getTexto(), $publicacion->getMultimedia(), $publicacion->getDataPublicacion(),$publicacion->getCodUsuario()];
             fputcsv($fp, $filaDatos);
         }
     } else {
