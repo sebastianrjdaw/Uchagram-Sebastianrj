@@ -6,7 +6,7 @@ Data modificación: 22/11/2022
 Versión 1.0 #
 */
 session_start();
-if (!isset($_SESSION["username"])) { //Si no esta el usuario guardado en la sesion redireccione al login
+if ((!isset($_SESSION["username"]))||($_SESSION['rol']=='user')) { //Si no esta el usuario guardado en la sesion redireccione al login
     echo "Error de autenticacion";
     header("Location: index.php");
 }
